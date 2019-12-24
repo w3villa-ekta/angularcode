@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<mat-card class="container">
+    <h2 class="heading">User - Details</h2>
+    <!-- <hr class="heading-hr"> -->
+    <form class="signup-form" (submit)="doSignUp(user)">
+        <div class="form-group">
+
+            <label>First-Name : {{current_user.first_name}} </label><br>
+            <hr>
+            <label>Last-Name : {{current_user.first_name}} </label><br>
+            <hr>
+            <label>Mobile-Number : {{current_user.mobile_number}}</label><br>
+            <hr>
+            <label>Email : {{current_user.email}}</label><br>
+            <hr>
+            <label>Password : {{current_user.password}} </label><br>
+            <hr>
+
+        </div>
+
+
+        <button mat-raised-button color="accent" [routerLink]="['/']" class="btn btn-success align-left">Return to home</button>
+
+
+
+    </form>
+</mat-card>

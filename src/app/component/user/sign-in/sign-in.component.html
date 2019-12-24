@@ -1,0 +1,22 @@
+<app-header></app-header>
+<mat-card class="container">
+    <h2 class="heading">SIGN-IN</h2>
+    <form class="signin-form">
+        <mat-form-field>
+            <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password">
+        </mat-form-field>
+
+
+
+        <button mat-raised-button [routerLink]="['']" color="accent" class="btn-1 btn-success align-left">SUBMIT</button>
+        <span class="space"><a href="" [routerLink]="['/change-password']">Forget password</a></span><br><br>
+        <span class="">If you have account? <a href="" [routerLink]="['/signup']"> Sign Up</a></span>
+
+
+
+
+    </form>
+</mat-card>
